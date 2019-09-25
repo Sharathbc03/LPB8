@@ -19,8 +19,9 @@ public class LoginPOM {
 	@FindBy(id="password")
 	private WebElement password;
 	
-	@FindBy(id="formLogin_submitAuth")
+	@FindBy(id="form-login_submitAuth")
 	private WebElement loginBtn; 
+	
 	
 	public void sendUserName(String userName) {
 		this.userName.clear();
@@ -31,8 +32,10 @@ public class LoginPOM {
 		this.password.clear(); 
 		this.password.sendKeys(password); 
 	}
-	
+
 	public void clickLoginBtn() {
 		this.loginBtn.click(); 
 	}
+	
+	
 }
